@@ -1,0 +1,1 @@
+ffmpeg -video_size 3840x2160 -framerate 60 -f x11grab -i :1 -f pulse -ac 2 -i default -c:v libx264 -crf 0 -qp 0 -preset ultrafast github_actions.mp4
